@@ -2,6 +2,8 @@
 @font-face {
     font-family:'Fuentenav';
     src: url(/Fuentes/JosefinSans-LightItalic.ttf);
+    font-family: 'esloganfont';
+    src: url(/Fuentes/RubikMarkerHatch-Regular.ttf);
 }
 
 * {
@@ -9,7 +11,10 @@
     padding: 0;
 }
 body{
-    background-color:4cc9f0;
+    background: #4CB8C4;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #3CD3AD, #4CB8C4);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #3CD3AD, #4CB8C4); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
 }
 header {
     background-color:4361ee;
@@ -19,13 +24,15 @@ header {
     padding: 10px;
     position: sticky;
     top: 0;
-    font-family: 'Fuentenav'
+    font-size: 22px;
+    font-weight: 700;
+    font-family: 'Fuentenav' 
 }
 
 #nav-title {
     margin-right: auto;
     border-radius: 100%;
-    height: 75px;
+    height: 85px;
     border: solid 2px;
     }
 
@@ -37,7 +44,7 @@ header li {
 
 header a {
     text-decoration: none;
-    color: 3a0ca3;
+    color: black;
     transition: all 0.5s ease 0s;
 }
 
@@ -45,7 +52,40 @@ header a:hover {
     color: #b2dfdb;
 }
 
-div {
-background-color: red;
-padding: 0 0 600px 0;
+.container{
+    display: flex;
+    display: inline-block;
+    flex-direction: row;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    padding: 0 0 600px 0;
+}
+
+.seccion1{
+    display: flex;
+   align-items: center;
+   align-content: center;
+    flex-direction: row;
+    background-color: aquamarine;
+    height: 50%;
+    width: 70%
+   
+}
+.eslogan{
+    font-family: esloganfont;
+    font-size: 100px;
+    height: 40%;
+}
+.img{
+display: flex;
+height: 100%;
+width: 100%;
+justify-content: end;
+}
+.mainmonster{
+    display: flex;
+    height: 100%;
+    justify-content: end;
+    
 }
